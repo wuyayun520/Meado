@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animatedAlphaDelay</key>
+	<string>statelessFactoryInteraction</string>
+	<key>checklistFacadeValidation</key>
+	<string>modelThanObserver</string>
+	<key>custompaintFrameworkSpeed</key>
+	<string>storeThroughFlyweight</string>
+	<key>geometricCubitTop</key>
+	<string>largeSlashOffset</string>
+	<key>layerVisitorSpeed</key>
+	<string>usecaseOutsideMethod</string>
+	<key>metadataForFacade</key>
+	<string>painterStrategyMode</string>
+	<key>responsiveTaskContrast</key>
+	<string>liteErrorTheme</string>
+	<key>touchShapeVisible</key>
+	<string>multiGridSize</string>
+	<key>typicalTickerRate</key>
+	<string>factoryPlatformForce</string>
+	<key>utilParamDensity</key>
+	<string>hashValueHead</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>consultativeWidgetRotation</key>
+	<string>nextSignCoord</string>
+	<key>cubitOutsideStage</key>
+	<string>reductionUntilMemento</string>
+	<key>dependencyChainAlignment</key>
+	<string>tweenUntilType</string>
+	<key>queueFromFramework</key>
+	<string>signChainMode</string>
+	<key>signActionBrightness</key>
+	<string>handlerCompositeSkewx</string>
+	<key>tabbarBufferSkewy</key>
+	<string>sinkActivityMode</string>
+	<key>visibleActivityPadding</key>
+	<string>heroThroughLayer</string>
+</dict>
+</plist>

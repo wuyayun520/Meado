@@ -7,6 +7,7 @@ import '../theme/app_theme.dart';
 import 'privacy_policy_screen.dart';
 import 'terms_of_service_screen.dart';
 import 'about_screen.dart';
+import 'meado_wallet_screen.dart';
 
 class MeScreen extends StatefulWidget {
   const MeScreen({super.key});
@@ -444,6 +445,22 @@ class _MeScreenState extends State<MeScreen> {
   Widget _buildSettingsSection(BuildContext context) {
     return Column(
       children: [
+        GestureDetector(
+          onTap: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const MeadoWalletScreen(),
+              ),
+            );
+          },
+          child: Container(
+            margin: const EdgeInsets.only(bottom: 20),
+            child: Image.asset(
+              'assets/Meado_me_wallet.webp',
+              fit: BoxFit.contain,
+            ),
+          ),
+        ),
         _buildSettingsItem(
           icon: Icons.description,
           title: 'User Contract',

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dedicatedFrameBottom</key>
+	<string>durationWithoutStyle</string>
+	<key>handlerDespiteOperation</key>
+	<string>screenContextCoord</string>
+	<key>optionThroughValue</key>
+	<string>permissiveContainerShade</string>
+	<key>precisionNumberForce</key>
+	<string>persistentStateColor</string>
+	<key>primaryCommandSkewx</key>
+	<string>interfaceBeyondCommand</string>
+	<key>publicEntityInteraction</key>
+	<string>zoneThanProxy</string>
+	<key>retainedMediaPosition</key>
+	<string>spotAgainstLayer</string>
+	<key>robustScaleHue</key>
+	<string>checkboxTypeCenter</string>
+	<key>temporaryControllerSkewy</key>
+	<string>checklistStyleInset</string>
+</dict>
+</plist>

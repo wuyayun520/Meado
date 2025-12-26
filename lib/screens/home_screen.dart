@@ -11,6 +11,7 @@ import 'me_screen.dart';
 import 'dynamic_screen.dart';
 import 'user_detail_screen.dart';
 import 'recommend_screen.dart';
+import '../utils/user_unlock_helper.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -439,12 +440,18 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _buildUserAvatar(String avatarUrl, String duration, String userId) {
     return GestureDetector(
-      onTap: () {
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => UserDetailScreen(userId: userId),
-          ),
+      onTap: () async {
+        final shouldNavigate = await UserUnlockHelper.checkAndUnlockUser(
+          context,
+          userId,
         );
+        if (shouldNavigate && mounted) {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => UserDetailScreen(userId: userId),
+            ),
+          );
+        }
       },
       child: Container(
         width: 145,

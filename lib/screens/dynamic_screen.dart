@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
 import 'user_detail_screen.dart';
+import '../utils/user_unlock_helper.dart';
 
 class DynamicScreen extends StatefulWidget {
   const DynamicScreen({super.key});
@@ -184,15 +185,22 @@ class _DynamicScreenState extends State<DynamicScreen> {
 
   Widget _buildVoiceCard(Map<String, dynamic> data) {
     return GestureDetector(
-      onTap: () {
+      onTap: () async {
         if (data['userId'] != null) {
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (context) => UserDetailScreen(
-                userId: data['userId'] as String,
-              ),
-            ),
+          final userId = data['userId'] as String;
+          final shouldNavigate = await UserUnlockHelper.checkAndUnlockUser(
+            context,
+            userId,
           );
+          if (shouldNavigate && mounted) {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => UserDetailScreen(
+                  userId: userId,
+                ),
+              ),
+            );
+          }
         }
       },
       child: Container(
